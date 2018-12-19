@@ -5,7 +5,7 @@ Description: AWS CloudFormation Template for launching a Locust load generator a
   log groups or log streams, since the CloudWatch Connector module creates them.
 Mappings:
   RegionMap:
-    us-east-1:
+    eu-north-1:
       #Find the latest image using: aws ec2 describe-images, for example:
       #aws ec2 describe-images --owners amazon --filters "Name=name,Values=amzn-ami-hvm-2018.03.0.20180811-x86_64-gp2" --region us-east-1
       AMI: ami-0ff8a91507f77f867
@@ -21,14 +21,14 @@ Outputs:
       - LocustServer
       - PublicIp
 Parameters:
-  InstanceTypeParameter: 
+  InstanceTypeParameter:
     Type: String
     Default: t2.micro
-    AllowedValues: 
+    AllowedValues:
       - t2.micro
       - t2.medium
       - t2.large
-      - m4.large      
+      - m4.large
     Description: Select an EC2 instance type
 
   KeyName:
@@ -123,7 +123,7 @@ Resources:
         - RegionMap
         - Ref: AWS::Region
         - AMI
-      InstanceType: 
+      InstanceType:
         Ref: InstanceTypeParameter
       KeyName:
         Ref: KeyName
