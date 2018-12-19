@@ -25,7 +25,7 @@ A t2.nano is usually enough to generate some decent load, but you can always mod
 to use a different instance type.
 
 
-<a href="https://console.aws.amazon.com/cloudformation/home?region=eu-north-1#/stacks/new?stackName=LocustCloudwatchConnector&templateURL=http://s3.amazonaws.com/concurrencylabs-cfn-templates/locust-cloudwatch/locust-cloudwatch.yml" target="new"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a>
+<a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=LocustCloudwatchConnector&templateURL=http://s3.amazonaws.com/concurrencylabs-cfn-templates/locust-cloudwatch/locust-cloudwatch.yml" target="new"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png" alt="Launch Stack"></a>
 
 
 
